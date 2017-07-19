@@ -5,7 +5,7 @@
 
 ## 開発手法
 - Github-flow
-- Slack, knowlegeなどでコミュニケーション
+- Slack, knowledgeなどでコミュニケーション
 - 個々のプロジェクト
 
 ## システム構成
