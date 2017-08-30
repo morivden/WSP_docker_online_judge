@@ -2,7 +2,7 @@
 // ace editorという外部ライブラリを呼び出す
 var aceEditor = ace.edit("source_code");
 
-aceEditor.setOption({
+aceEditor.setOptions({
   enableBasicAutocompletion: true,
   enableLiveAutocompletion: true,
   enableSnippets: true,
@@ -19,7 +19,7 @@ aceEditor.commands.addCommand({
 });
 
 // ace editorのシンタックスの設定
-function sedEditorLanguage(language) {
+function setEditorLanguage(language) {
   var languageToMode = {
     ruby: 'ruby',
     python: 'python',
