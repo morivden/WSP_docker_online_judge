@@ -1,8 +1,5 @@
-FROM ubuntu
-RUN apt-get update
-RUN apt-get install -y ruby
-RUN apt-get install -y phthon
-RUN apt-get install -y clang
-RUN apt-get install -y time
-RUN apt-get install -y binutls
+FROM centos
+
+RUN /bin/cp -f /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
+RUN yum install -y gcc ruby python
 

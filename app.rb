@@ -36,7 +36,7 @@ post '/api/run' do
   c = ExecContainer.new(time, lang)
   r = c.exec()
 
-  return_params = {stdout: r[0].json(''), stderr: r[1].json(''), exit_code: r[2]}
+  return_params = {stdout: r[0].join(''), stderr: r[1].join(''), exit_code: r[2]}
   content_type :json
   return_params.to_json
 end
