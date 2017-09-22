@@ -4,7 +4,7 @@ function runCode() {
 
   var language = $('#language').val();
   var source_code = aceEditor.getValue();
-  var input = $('#input1').val();
+  var input1 = $('#input1').val();
 
   $.ajax({
     // '/api/run'にデータを投げる設定
@@ -13,7 +13,7 @@ function runCode() {
     data: {
       language: language,
       source_code: source_code,
-      input: input
+      input1: input1
     }
   }).done(function(result) {
     // サーバ側で実行終了したときの結果の反映
