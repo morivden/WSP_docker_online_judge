@@ -8,6 +8,8 @@ function runCode() {
 
   $.ajax({
     // '/api/run'にデータを投げる設定
+    // ブランチを切った状態で変更しても変更後のJSが降ってこない
+    // DeveloperToolで書き換えないと正常に動作しない
     url: '/api/run',
     method: 'POST',
     data: {
