@@ -4,7 +4,7 @@ function runCode() {
 
   var language = $('#language').val();
   var source_code = aceEditor.getValue();
-  var input = $('#input').val();
+  var input = $('#input1').val();
 
   $.ajax({
     // '/api/run'にデータを投げる設定
