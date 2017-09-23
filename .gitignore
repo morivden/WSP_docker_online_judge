@@ -1,5 +1,3 @@
-/tmp/*.c
-/tmp/*.ruby
-/tmp/*.python
-/tmp/*.in
+/tmp/*
+!.keep
 
