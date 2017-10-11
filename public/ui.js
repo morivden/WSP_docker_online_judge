@@ -35,3 +35,6 @@ $('#language').on("change", function(event) {
   setEditorLanguage(this.value);
 });
 
+(function() {
+    $("#run_button").removeAttr("disabled")
+})()

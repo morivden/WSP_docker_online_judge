@@ -14,7 +14,7 @@ end
 post '/api/run' do
   lang = params[:language]
   prog = params[:source_code]
-  stdin = params[:input]
+  stdin = params[:input1]
   time = Time.now.to_f
   # プログラムファイル
   p_fname = "#{time}.#{lang.downcase}"

@@ -4,16 +4,18 @@ function runCode() {
 
   var language = $('#language').val();
   var source_code = aceEditor.getValue();
-  var input = $('#input').val();
+  var input1 = $('#input1').val();
 
   $.ajax({
     // '/api/run'にデータを投げる設定
+    // ブランチを切った状態で変更しても変更後のJSが降ってこない
+    // DeveloperToolで書き換えないと正常に動作しない
     url: '/api/run',
     method: 'POST',
     data: {
       language: language,
       source_code: source_code,
-      input: input
+      input1: input1
     }
   }).done(function(result) {
     // サーバ側で実行終了したときの結果の反映
