@@ -34,4 +34,3 @@ setEditorLanguage('ruby');
 $('#language').on("change", function(event) {
   setEditorLanguage(this.value);
 });
-
